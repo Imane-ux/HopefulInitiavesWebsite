@@ -21,10 +21,13 @@ const Navbar = () => {
         {/*<li><Link to="/about" onClick={() => scrollToSection('about')}>About</Link></li>
         {/*<li> <Link to="/about">About</Link>  </li>*/}
         
-        <li><a href="/#about">About</a></li>
+        {/*<li><a href="/#/#about">About</a></li> {/** adding extra /# because i am using a hash router now */}
+        <li>
+              <Link to="/about">About</Link>
+            </li>
         <li> <Link to="/events">Events</Link>  </li>
-        <li> <a href="/#volunteer">Volunteer</a> </li>
-        <li> <a href="/#footer" className='btn'> Contact Us </a> </li>
+        <li> <a href="/#/#volunteer">Volunteer</a> </li>
+        <li> <a href="/#/#footer" className='btn'> Contact Us </a> </li>
 
       </ul>
 
