@@ -1,0 +1,79 @@
+nav{
+    background-color: #10453c;
+}
+h2{
+    margin-top: 1rem;
+}
+.searchBox{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    background-color:#10453c;
+    width: 80%;
+    min-height: 150px;
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin: 20px auto 20px;
+    color: white;
+
+}
+.events-content {
+    /* Add padding or margin to create space below Navbar */
+    padding-top: 6rem; /* Adjust as needed */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.event{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 20px;
+    margin-bottom: 1rem;
+    padding: 15px;
+}
+
+.events-list{
+    background: url('../../assets/Background.png'), linear-gradient(rgba(177, 218, 211, 0.7), rgba(177, 218, 211, 0.7));
+    margin-top: 2rem;
+    width: 100%;
+    padding: 7%;
+}
+
+.custom-select {
+    margin-left: 5px;
+    margin-right: 10px;
+  position: relative;
+  font-size: 14px;
+  appearance: none; /* Removes default arrow in Firefox */
+  -webkit-appearance: none; /* Removes default arrow in Webkit browsers */
+  -moz-appearance: none; /* Removes default arrow in older Firefox */
+  padding: 8px 30px 8px 8px; /* Adjust padding as needed */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  color: #333;
+}
+.custom-select::after {
+    content: '';
+    position: absolute;
+    top: calc(50% - 3px);
+    right: 10px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 6px 5px 0 5px;
+    border-color: #000 transparent transparent transparent;
+    pointer-events: none; /* Ensures clicks go through to select */
+  }
+  
+  .custom-select:focus {
+    outline: none; /* Remove focus outline if needed */
+    border-color: #000; /* Black border color on focus */
+  }

@@ -1,0 +1,21 @@
+.connectWithUs{
+    margin-top: 2rem;
+    background-image: url('../../assets/Background.png') ;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2rem;
+
+}
+h3{
+    padding-top: 2rem;
+    font-weight: 600;
+    font-weight: 16px;
+    color: #10453c;
+}
+h2{
+    font-size: 35px;
+    color: black;
+    margin: 10px 0;
+   
+}

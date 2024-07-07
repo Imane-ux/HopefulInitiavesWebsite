@@ -1,0 +1,39 @@
+.footer{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    background-color: #10453c;
+    color: white;
+}
+.columns{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    position: relative;
+}
+.column {
+    margin-right: 80px; 
+  }
+  
+.column ul {
+    list-style-type: none; 
+    padding: 0;
+}
+.column h4{
+    color: #B1DAD3; /* or makw it white*/
+}
+  
+.column ul li {
+    margin-bottom: 10px; /* Adjust spacing between list items */
+ }
+
+.columns p{
+    
+    position: absolute; /* Position the paragraph absolutely */
+    bottom: 0; /* Align the bottom edge of the paragraph with the bottom edge of the container */
+    margin-bottom: 0;
+    text-align: right;
+}

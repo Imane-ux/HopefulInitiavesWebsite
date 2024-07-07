@@ -1,0 +1,43 @@
+.part1{
+    padding-top: 6rem;
+ 
+}
+.part1 p{
+    padding: 2rem;
+    width: 60%;
+    font-size: 24px;
+    font-weight: bold;
+    background: url('../../assets/Background.png');
+
+}
+.imgP{
+
+    position: fixed;
+    bottom: 170px; /* Adjust as needed */
+    right: 0px; 
+}
+.part2{
+    padding-top: 1rem;
+    padding-left: 2rem;
+}
+.groupInput{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 20%;
+    padding-right: 30%;
+    margin-bottom: 2rem;
+}
+.message {
+    display: none; 
+    background-image: url('../../assets/Background.png');
+    padding: 5px;
+    font-size: 18px;
+    
+  }
+  
+  .message.show {
+    display: block; 
+  }

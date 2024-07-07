@@ -1,0 +1,62 @@
+.partie1{
+    padding-top: 10rem;
+    padding-left: 2rem;
+    background: url('../../assets/Background.png');
+}
+.box{
+    margin-top: 2rem;
+    background-color: white;
+    margin-left: 6rem;
+    width: 70%;
+    border: none;
+    border-radius: 30px;
+    padding: 10px;
+}
+.partie2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.column1{
+    width: 30%;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.column2{
+    margin-top: 10px;
+    width: 60%;
+    background-color: #10453c;
+    display: flex;
+    flex-direction: column;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+}
+h4{
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+h6{
+    margin-top: 1rem;
+}
+
+
+.column2 input {
+    margin-top: 10px;
+    margin-left: 10px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    width: 95%;
+
+    box-sizing: border-box; /* Ensures padding and border are included in width */
+  }
