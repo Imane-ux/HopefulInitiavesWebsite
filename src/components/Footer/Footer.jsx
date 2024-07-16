@@ -1,6 +1,10 @@
 import React from 'react'
 import './Footer.css'
+import { useTranslation } from 'react-i18next'
+
 const Footer = () => {
+    const { t} = useTranslation();
+
   return (
     <div className='footer'>
       <div className='column1'>
@@ -11,31 +15,31 @@ const Footer = () => {
       </div>
       <div id='footer' className='columns'>
             <div className='column'>
-                <h4> Events</h4>
+                <h4> {t("events")}</h4>
                 <hr />
                 <br />
                 <ul>
-                    <li> Annual Events</li>
-                    <li> Monthly Events</li>
-                    <li> Weekly Events</li>
+                    <li> {t("categorySection.category3")}</li>
+                    <li> {t("categorySection.category2")}</li>
+                    <li> {t("categorySection.category1")}</li>
                 </ul>
             </div>
             <div className='mt-5 column'>
-                <h4> Volunteer</h4>
+                <h4> {t("volunteer")}</h4>
                 <hr />
                 <ul>
-                    <li> Host your Event</li>
-                    <li> General Volunteers</li>
+                    <li> {t("volunteerSection.host")}</li>
+                    <li> {t("volunteerSection.general")}</li>
                 </ul>
                 <br />
-                <h4> About</h4>
+                <h4> {t("about")}</h4>
                 <hr />
                 <ul>
-                    <li><a href="#about">About us</a></li>
+                    <li><a href="#about">{t("about")}</a></li>
                 </ul>
             </div>
             <div className='column'>
-                <h4> Contact Us</h4>
+                <h4> {t("contact")}</h4>
                 <hr />
                 <br />
                     <ul>
@@ -44,7 +48,7 @@ const Footer = () => {
                     </ul>
                     <br />
                     <br />
-                <p> All Rights Reserved.</p>
+                <p> {t("rights")}</p>
             </div>
         </div>
     </div>

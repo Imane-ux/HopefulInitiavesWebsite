@@ -7,6 +7,7 @@ import Volunteer from './components/Volunteer/Volunteer'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Footer from './components/Footer/Footer'
 import Connect from './components/Connect/Connect'
+import Help from './components/Help/Help'
 
 
 
@@ -22,6 +23,7 @@ const App = () => {
       
       <Volunteer/>
       <Connect/>
+      <Help/>
       <Footer/>
     </div>
   )

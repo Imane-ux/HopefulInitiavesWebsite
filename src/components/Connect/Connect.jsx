@@ -1,20 +1,22 @@
 import React from 'react'
 import './Connect.css'
+import { useTranslation } from 'react-i18next'
 
 const Connect = () => {
+  const { t} = useTranslation();
   return (
     <div className='connectWithUs'>
-       <h3> Connect with Us</h3>
-        <h2> Connecting Attendees with Event Organizers</h2>
-        <p>Join our group chats to stay updated on the latest information, announcements, and ask any questions you may have!</p>
+       <h3> {t("connectSection.title")}</h3>
+        <h2> {t("connectSection.subTitle")}</h2>
+        <p>{t("connectSection.content1")}</p>
 
-            <a>WhatsApp Group Chat</a>
+            <a href="https://chat.whatsapp.com/D7EbDJjg4a02muPGDbak9p" style={{ textDecoration: 'underline', color: '#10453C' }}>WhatsApp Group Chat</a>
             <br/>
-            <a>Instagram Group Chat</a>
+            <a href="https://www.instagram.com/j/AbYnSWEuxh7dxAIq/" style={{ textDecoration: 'underline', color: '#10453C' }}>Instagram Group Chat</a>
 
         <br/>
         <br/>
-        <p> Stay informed and engaged with fellow attendees, volunteers, and organizers!</p>
+        <p> {t("connectSection.content2")}</p>
     </div>
   )
 }

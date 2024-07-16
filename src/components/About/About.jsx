@@ -1,8 +1,10 @@
 import React from 'react'
 import './About.css'
 import image1 from '../../assets/about.png'
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+  const { t} = useTranslation();
   return (
       
     <div id="about" className='about'>
@@ -10,15 +12,15 @@ const About = () => {
             <img src={image1} alt="" className='image1' />
         </div>
         <div className='about-right'>
-            <h3> About Hopeful Initiatives</h3>
-            <h2> Faith in The Power of a Strong Community</h2>
-            <p>     At "Hopeful Initiatives," we believe in the power of community and compassion. Our mission is to bring people together through meaningful events that not only enrich lives but also make a positive impact. Since 2023, we have been dedicated to organizing events that support local charities and foster community spirit. Join us in making a difference today.</p>
+            <h3> {t("aboutSection.title")}</h3>
+            <h2> {t("aboutSection.subTitle")}</h2>
+            <p> {t("aboutSection.content")}</p>
             <br />
-            <span className="boldText">Our Mission:</span>{' '}To foster a sense of belonging and togetherness through impactful events that promote community engagement and support charitable causes.
+            <span className="boldText">{t("aboutSection.mission")}</span>{' '}{t("aboutSection.missionText")}
             <br />
-            <span className="boldText">Our Vision:</span>{' '}A future where every individual feels empowered to contribute to a thriving community, creating lasting positive change through unity and compassion.
+            <span className="boldText">{t("aboutSection.vision")}</span>{' '}{t("aboutSection.visionText")}
             <br />
-            <span className="boldText">Get Involved:</span>{' '}Join us in spreading hope and making a difference in our community. Whether you volunteer your time, donate to our causes, or participate in our events, your support helps us strengthen the bonds that unite us all.
+            <span className="boldText">{t("aboutSection.getInvolved")}</span>{' '} {t("aboutSection.getInvolvedText")}
         </div>
     </div>
   )

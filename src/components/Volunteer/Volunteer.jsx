@@ -1,12 +1,14 @@
 import React from 'react';
 //import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import CardSection from '../CardSection/CardSection';
+import { useTranslation } from 'react-i18next';
 
 const Volunteer = () => {
+  const { t} = useTranslation();
   return (
     <div id='volunteer' className='volunteer'>
       <div className='title'>
-        <h2> Become a Volunteer</h2>
+        <h2> {t("volunteerSection.title")}</h2>
       </div>
       <div className='volunteeringOptions'>
         <CardSection />

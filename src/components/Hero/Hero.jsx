@@ -1,12 +1,21 @@
 import React from 'react'
 import './Hero.css'
 import { Link } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 
 const Hero = () => {
+  const { t} = useTranslation()
+  //const { t } = useTranslation('global');
+  /*const [t, i18n] = useTranslation('global');
+  console.log('Current language:', i18n.language);
+  console.log('Current language:', i18n);
+  console.log('Translation object:', t);
+  console.log('Translated "welcome":', t('welcome'));*/
+
   return (
     <div id='home' className='hero'>
       <div className="hero-text">
-        <h1> Find Your Next Meaningful Event with Hopeful Initiatives! </h1>
+        <h1> {t("welcome")}</h1>
         {/*  <div className="heroSearchBox">
             <div className="filter-box">
                 <label htmlFor="filter1">Category:</label>
@@ -39,7 +48,7 @@ const Hero = () => {
       </div> 
     */}
         <Link to="events" style={{ textDecoration: 'none' }}>
-          <button className="filter-button">Explore events now!</button>
+          <button className="filter-button">{t("explore")}</button>
         </Link>
 
       </div>

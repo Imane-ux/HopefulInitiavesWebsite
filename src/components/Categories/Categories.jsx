@@ -3,33 +3,35 @@ import './Categories.css'
 import event_1 from '../../assets/event.jpg'
 import event_2 from '../../assets/event2.jpg'
 import event_3 from '../../assets/event3.jpg'
+import { useTranslation } from 'react-i18next'
 
 const Categories = () => {
+  const { t} = useTranslation();
   return (
     <div>
       <div className='title'>
-        <h2> Our Local Events Categories</h2>
+        <h2> {t("categorySection.title")}</h2>
       </div>
       <div className='categories'>
           <div className='category'>
-              <img src={event_1} alt="" />
-              <h4> Weekly Events</h4>
+              <img src={event_1} alt={t("categorySection.category1")} />
+              <h4> {t("categorySection.category1")}</h4>
               <div className="caption">
-                <p> These are events that happen on a weekly basis. You get to build stonger friendships and connections!</p>
+                <p> {t("categorySection.category1Text")}</p>
               </div>
           </div>
           <div className='category'>
-              <img src={event_2} alt="" />
-              <h4> Monthly Events</h4>
+              <img src={event_2} alt={t("categorySection.category2")} />
+              <h4> {t("categorySection.category2")}</h4>
               <div className="caption">
-                <p> These are events that happen on a Monthly basis. Largely preferred by working individuals looking for community engagement!</p>
+                <p> {t("categorySection.category2Text")}</p>
               </div>
           </div>
           <div className='category'>
-              <img src={event_3} alt="" />
-              <h4> Annual Events</h4>
+              <img src={event_3} alt={t("categorySection.category3")} />
+              <h4> {t("categorySection.category3")}</h4>
               <div className="caption">
-                <p> These are events that occur once a year. They're usualy bigger events that have activities for all kinds of age groups!</p>
+                <p> {t("categorySection.category3Text")}</p>
               </div>
           </div>
         

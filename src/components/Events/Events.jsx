@@ -5,6 +5,7 @@ import logo0 from '../../assets/LCME-Icon2-2.png'
 import { eventsData } from '../Data/data'
 
 const Events = () => {
+
   const [events, setEvents] = useState(eventsData);
     const [filteredEvents, setFilteredEvents] = useState(eventsData);
     const [searchTerm, setSearchTerm] = useState('');
