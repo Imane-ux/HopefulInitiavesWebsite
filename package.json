@@ -2,7 +2,7 @@
   "name": "hopefulinitiatives",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://imane-ux.github.io/HopefulInitiavesWebsite",
+  "homepage": "https://Imane-ux.github.io/HopefulInitiavesWebsite",
   "type": "module",
   "scripts": {
     "dev": "vite",

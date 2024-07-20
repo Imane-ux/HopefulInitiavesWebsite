@@ -12,22 +12,6 @@ import RegisterVolunteer from './components/RegisterVolunteer/RegisterVolunteer.
 import './index.css'
 import "./i18n.js"
 
-/*i18next.init({
-  interpolation: { escapeValue: false },  // React already does escaping
-  lng: 'fr',                              // Default language
-  resources: {
-    en: {
-      global: {
-        global_en,
-      }
-    },
-    fr: {
-      global: {
-        global_fr,
-      }
-    },
-  },
-});*/
 
 export default function Router() {
   return (
