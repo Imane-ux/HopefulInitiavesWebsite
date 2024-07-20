@@ -24,8 +24,8 @@ const Navbar = () => {
       i18n.changeLanguage(newLang);
     };
     const dropdownItems = [
-      { text: 'Host an Event', link: '/#card1' },
-      { text: 'General Form', link: '/#card2' },
+      { text: t("volunteerSection.host"), link: '/card1' },
+      { text: t("volunteerSection.general"), link: '/card2' },
     ];
   
     const toggleDropdown = () => {
@@ -42,14 +42,16 @@ const Navbar = () => {
         
         {/*<li><a href="/#/#about">About</a></li> {/** adding extra /# because i am using a hash router now */}
         <li>
-              <Link to="/about">{t("about")}</Link>
+             {/*<Link to="/#about">{t("about")}</Link> {/*added # here*/}
+             <a href="/#about">About</a>
             </li>
         <li> <Link to="/events">{t("events")}</Link>  </li>
         {/*<li> <a href="/#/#volunteer">{t("volunteer")}</a> </li>*/}
         <li className="nav-item dropdown">
-          <a href="#/#volunteer" className="nav-link dropdown-toggle" onClick={toggleDropdown}>
+          <a href="/#volunteer" className="nav-link dropdown-toggle" onClick={toggleDropdown}>
             {t("volunteer")}
           </a>
+          {/*chnaged #/#volunteer*/}
           <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
             {dropdownItems.map((item, index) => (
               <li key={index}>
@@ -61,8 +63,9 @@ const Navbar = () => {
           </ul>
         </li>
         
-        <li> <a href="/#/#help">FAQ</a> </li>
-        <li> <a href="/#/#footer" className='btn'> {t("contact")} </a> </li>
+        <li> <a href="/#help">FAQ</a> </li>
+        <li> <a href="/#footer" className='btn'> {t("contact")} </a> </li>
+        {/*chnaged #/#footer*/}
         <li><a href="#" onClick={toggleLanguage}>{i18n.language === 'fr' ? 'EN' : 'FR'}</a></li>
         
 

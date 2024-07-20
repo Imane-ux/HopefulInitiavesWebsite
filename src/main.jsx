@@ -1,6 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import { HashRouter, Routes, Route } from "react-router-dom";
+//import { HashRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { I18nextProvider } from 'react-i18next';
 import i18next from 'i18next';
 import App from './App.jsx'
@@ -15,19 +16,22 @@ import "./i18n.js"
 
 export default function Router() {
   return (
-    <HashRouter>
+    
+     <BrowserRouter>
+     {/*<HashRouter>*/}
       <Routes>
         <Route path="/" element={<App />}>
           <Route index element={<Hero />} />
-          <Route path="/about" component={About} />
-          {/*<Route path="events" element={<Events/>} />
-          {/* <Route path="contact" element={<Footer />} />*/}
+          {/*<Route path="/#about" element={<About />} />*/}
+          {/* <Route path="/events" element={<Events />} /> */}
+          {/* <Route path="/contact" element={<Footer />} /> */}
         </Route>
-        <Route path="events" element={<Events/>} />
-        <Route path="/card1" element={<HostVolunteer/>} />
-        <Route path="/card2" element={<RegisterVolunteer/>} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/card1" element={<HostVolunteer />} />
+        <Route path="/card2" element={<RegisterVolunteer />} />
       </Routes>
-    </HashRouter>
+      {/*</HashRouter>*/}
+    </BrowserRouter>
   );
 }
 ReactDOM.createRoot(document.getElementById('root')).render(

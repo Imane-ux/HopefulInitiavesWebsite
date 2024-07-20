@@ -36,7 +36,7 @@ const Help = () => {
       ];
 
   return (
-    <div className="help-container">
+    <div id="help" className="help-container">
         <h3>{t("helpSection.title1")}</h3>
       <h2 >{t("helpSection.title")}</h2>
       {faqItems.map((item) => (
