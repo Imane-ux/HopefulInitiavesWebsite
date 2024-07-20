@@ -58,7 +58,12 @@ i18n
                 helpSection:{
                     title1: "Need help?",
                     title:"FAQ - Frequently Asked Questions",                   
-
+                    question1:"How to seacrh for events?",
+                    question2:"What kind of work do volunteers do?",
+                    question3:"Is there a minimum number of hours commitment for volunteers?",
+                    answer1:"From the navbar above, click on the events tab. This will take you to a page where you can find events based on your age, your city, and what kind of events you are looking for.",
+                    answer2:"Volunteers can choose to host their own non-profit event. They can also choose to become a general member volunteer to help other volunteer organizers in their events. Task may include assisting with the setup, clean up, booking a venue... \n To clarify as a volunteer, it isn't mandatory to host an event.",
+                    answer3:"There is no minimum number of hours required for volunteers. We only ask that you commit to the number of hours you choose to volunteer per week. Please inform us if you plan to change your commitment so that we can find a substitute.",
                 },
 
             },
@@ -113,7 +118,12 @@ i18n
                 helpSection:{
                     title1: "Besoin d'aide?",
                     title:"FAQ - Foire aux questions",                   
-
+                    question1:"Comment trouver des événements",
+                    question2:"Quel genre de travaux sont faits par les bénévolats?",
+                    question3:"Quel est le nombre d'heures minimales requis pour les volontaires?",
+                    answer1:"Depuis la barre de navigation ci-dessus, cliquez sur l'onglet Événements. Cela vous mènera à une page où vous pourrez trouver des événements en fonction de votre âge et du type d'événements que vous recherchez.",
+                    answer2:"Les bénévoles peuvent choisir d'organiser leur propre événement à but non lucratif. Ils peuvent aussi choisir de devenir bénévole membre pour aider d'autres organisateurs bénévoles dans leurs événements. Les tâches peuvent inclure l'aide à la mise en place, au nettoyage, à la réservation d'un lieu... \n Pour préciser, en tant que bénévole, il n'est pas obligatoire d'organiser un événement.",
+                    answer3:"Il n'y a pas de nombre minimum d'heures requis pour les bénévoles. Nous vous demandons simplement de vous engager pour le nombre d'heures que vous choisissez de consacrer bénévolement par semaine. Veuillez nous informer si vous prévoyez de modifier votre engagement afin que nous puissions trouver un remplaçant.",
                 },
             },
         }

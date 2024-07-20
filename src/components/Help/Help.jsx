@@ -19,18 +19,18 @@ const Help = () => {
 
     const faqItems = [
         {
-          question: 'What is Lorem Ipsum?',
-          answer: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
+          question: t('helpSection.question1'), 
+          answer:t('helpSection.answer1'), 
           id: 'question1',
         },
         {
-          question: 'Why do we use it?',
-          answer: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.',
+          question: t('helpSection.question2'), 
+          answer:t('helpSection.answer2'), 
           id: 'question2',
         },
         {
-          question: 'Where does it come from?',
-          answer: 'Contrary to popular belief, Lorem Ipsum is not simply random text.',
+          question: t('helpSection.question3'), 
+          answer:t('helpSection.answer3'), 
           id: 'question3',
         },
       ];
