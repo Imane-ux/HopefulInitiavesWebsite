@@ -103,6 +103,13 @@ const handleDateChange = (event) => {
     if (!dateTime.date) {
       errors.date = 'Date is required';
       formIsValid = false;
+    } else {
+      const selectedDate = new Date(dateTime.date);
+      const currentDate = new Date();
+      if (selectedDate < currentDate) {
+        errors.date = 'Please select a future date';
+        formIsValid = false;
+      }
     }
 
     if (!dateTime.time) {
