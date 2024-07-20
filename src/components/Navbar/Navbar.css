@@ -25,3 +25,33 @@ nav ul li {
     background-color: #10453c ;
     transition: 0.5s;
 }
+.dropdown {
+    position: relative;
+  }
+  
+  .dropdown-toggle::after {
+    content: '\25BC'; /* Unicode for downward arrow */
+    margin-left: 5px; /* Adjust spacing */
+  }
+.dropdown-menu {
+    position: absolute;
+    z-index: 1000;
+    display: none; 
+    background-color: #fff; 
+    min-width: 160px; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); 
+  }
+  
+  .dropdown-menu.show {
+    display: block; 
+  }
+  .dropdown-item {
+    padding: 8px 16px;
+    text-decoration: none;
+    display: block;
+    color: #333; /* Adjust item color */
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f1f1f1; /* Adjust hover background color */
+  }

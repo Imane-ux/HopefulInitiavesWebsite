@@ -5,10 +5,12 @@ import { useState } from 'react'
 import { useEffect } from 'react'
 import { Link } from 'react-router-dom'
 import { useTranslation } from 'react-i18next';
+//import { Nav, Navbar, NavDropdown } from 'react-bootstrap'; 
+import {NavDropdown } from 'react-bootstrap'; 
 const Navbar = () => {
 
     const { t, i18n } = useTranslation();
-
+    const [isOpen, setIsOpen] = useState(false);
     const[sticky, setSticky]= useState(false);
 
     useEffect(()=> {
@@ -21,6 +23,15 @@ const Navbar = () => {
       const newLang = i18n.language === 'fr' ? 'en' : 'fr';
       i18n.changeLanguage(newLang);
     };
+    const dropdownItems = [
+      { text: 'Host an Event', link: '/#card1' },
+      { text: 'General Form', link: '/#card2' },
+    ];
+  
+    const toggleDropdown = () => {
+      setIsOpen(!isOpen);
+    };
+    
 
   return (
     <nav className={`${sticky? 'dark-nav': '' }`}>
@@ -34,11 +45,26 @@ const Navbar = () => {
               <Link to="/about">{t("about")}</Link>
             </li>
         <li> <Link to="/events">{t("events")}</Link>  </li>
-        <li> <a href="/#/#volunteer">{t("volunteer")}</a> </li>
+        {/*<li> <a href="/#/#volunteer">{t("volunteer")}</a> </li>*/}
+        <li className="nav-item dropdown">
+          <a href="#/#volunteer" className="nav-link dropdown-toggle" onClick={toggleDropdown}>
+            {t("volunteer")}
+          </a>
+          <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
+            {dropdownItems.map((item, index) => (
+              <li key={index}>
+                <a href={item.link} className="dropdown-item">
+                  {item.text}
+                </a>
+              </li>
+            ))}
+          </ul>
+        </li>
+        
         <li> <a href="/#/#help">FAQ</a> </li>
         <li> <a href="/#/#footer" className='btn'> {t("contact")} </a> </li>
         <li><a href="#" onClick={toggleLanguage}>{i18n.language === 'fr' ? 'EN' : 'FR'}</a></li>
-        {/*<li> <a href="/#" onClick={handleTranslateToFrench}> FR </a> </li>*/}
+        
 
       </ul>
 
