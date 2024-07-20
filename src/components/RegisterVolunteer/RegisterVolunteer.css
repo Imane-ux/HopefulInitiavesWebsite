@@ -60,3 +60,9 @@ h6{
 
     box-sizing: border-box; /* Ensures padding and border are included in width */
   }
+
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-top: 5px;
+  }
