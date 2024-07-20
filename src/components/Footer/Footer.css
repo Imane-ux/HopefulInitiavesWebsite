@@ -7,6 +7,19 @@
     background-color: #10453c;
     color: white;
 }
+.column1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+}
+.socials{
+    align-self: flex-end; 
+    margin-top: 20rem; 
+    text-align: right;
+}
 .columns{
     display: flex;
     align-items: center;
@@ -27,13 +40,17 @@
 }
   
 .column ul li {
-    margin-bottom: 10px; /* Adjust spacing between list items */
+    margin-bottom: 10px; 
  }
 
 .columns p{
     
-    position: absolute; /* Position the paragraph absolutely */
-    bottom: 0; /* Align the bottom edge of the paragraph with the bottom edge of the container */
+    position: absolute; 
+    bottom: 0; 
     margin-bottom: 0;
     text-align: right;
+}
+.icon{
+    width: 25px;
+    height: 25px;
 }

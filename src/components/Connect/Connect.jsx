@@ -1,7 +1,7 @@
 import React from 'react'
 import './Connect.css'
 import { useTranslation } from 'react-i18next'
-import whatsappIcon from '../../assets/whatsApp-green.png' // Import your WhatsApp icon image
+import whatsappIcon from '../../assets/whatsApp-green.png' 
 import instagramIcon from '../../assets/instagram.png'
 
 const Connect = () => {
@@ -23,7 +23,7 @@ const Connect = () => {
           Instagram Group Chat
         </a>
       </div>
-      
+
         <br/>
         <br/>
         <p> {t("connectSection.content2")}</p>

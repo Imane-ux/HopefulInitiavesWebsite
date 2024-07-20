@@ -1,6 +1,13 @@
 import React from 'react'
 import './Footer.css'
 import { useTranslation } from 'react-i18next'
+import phoneIcon from '../../assets/phone.png'
+import emailIcon from '../../assets/mail.png'
+import tiktokIcon from '../../assets/TikTok-white.png'
+import instagramIcon from '../../assets/Instagram-white.png'
+import whatsappIcon from '../../assets/whatsApp-white.png' 
+
+
 
 const Footer = () => {
     const { t} = useTranslation();
@@ -8,9 +15,17 @@ const Footer = () => {
   return (
     <div className='footer'>
       <div className='column1'>
-        <h2> Hopeful Intiatives</h2>
+        <h2 style={{color: 'white'}}> Hopeful Intiatives</h2>
 
         {/* icons inserted here in another div to add spacing*/}
+        <div className="socials ">
+            <div>
+                <img src={instagramIcon} alt="Instagram Icon" className="icon" style={{marginRight: 2+'rem'}}/>
+                <img src={whatsappIcon} alt="Whatsapp Icon" className="icon" style={{marginRight: 2+'rem'}}/>
+                <img src={tiktokIcon} alt="Tiktok Icon" className="icon"/>
+            </div>
+                <p>Coming soon.</p>
+        </div>
 
       </div>
       <div id='footer' className='columns'>
@@ -43,8 +58,14 @@ const Footer = () => {
                 <hr />
                 <br />
                     <ul>
-                        <li> 613-222-2222</li>
-                        <li> hopeful@initiatives.ca</li>
+                        <li>
+                            <img src={phoneIcon} alt="Phone Icon" className="icon" />
+                            613-222-2222
+                        </li>
+                        <li>
+                            <img src={emailIcon} alt="Email Icon" className="icon" />
+                            hopeful@initiatives.ca
+                        </li>
                     </ul>
                     <br />
                     <br />
