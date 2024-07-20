@@ -2,6 +2,8 @@ import React, { useState, useEffect } from 'react';
 import './Events.css'
 import Navbar from '../Navbar/Navbar'
 import logo0 from '../../assets/LCME-Icon2-2.png'
+import event1Image from '../../assets/event1.jpg' // Import your images statically
+import event2Image from '../../assets/event.png'
 import { eventsData } from '../Data/data'
 
 const Events = () => {
@@ -26,6 +28,17 @@ const Events = () => {
         );
         setFilteredEvents(filtered);
     };
+    const getImage = (imageName) => {
+      switch (imageName) {
+        case 'event1.jpg':
+          return event1Image;
+        case 'event.png':
+          return event2Image;
+        
+        default:
+          return 'event1.jpg'; // Return a default image 
+      }
+    };
 
     const handleSearchChange = (e) => {
         setSearchTerm(e.target.value);
@@ -49,7 +62,7 @@ const Events = () => {
       <Navbar/>
       <div className='events-content'>
         <h2>Event Search Filters</h2>
-        {/* Other content related to events */}
+        
         <div className="searchBox">
             <img src={logo0} alt="" style={{width: "100px", height: "100px"}}/>
             <input type="text" placeholder="Search by event title..." value={searchTerm} onChange={handleSearchChange} style={{ 
@@ -82,11 +95,17 @@ const Events = () => {
             </select>
             </div>
         <div className="events-list">
-                {filteredEvents.map(event => (
+        {filteredEvents.length === 0 ? (
+            <div className="no-events-found">
+              <p>No events match your search criteria.</p>
+              <p>Please feel free to contact us for personalized assistance or to suggest events you would like to see organized.</p>
+              <p>613-222-2222</p>
+            </div>
+          ) : (
+                filteredEvents.map(event => (
                     <div key={event.id} className="event">
                         <div className='event-img'>
-                          
-                          <img src={event.eventImage} alt={event.eventImage} style={{ maxWidth: '100%' }} />
+                          <img src={getImage(event.eventImage)} alt={event.eventTitle} style={{ width: '20rem', marginRight: '10px' }} />        
                         </div>
                         <div className='event-info'>
                           <h3>{event.eventTitle}</h3>
@@ -118,7 +137,8 @@ const Events = () => {
 
                         </div>
                     </div>
-                ))}
+                ))
+              )}
             
         </div>
       </div>

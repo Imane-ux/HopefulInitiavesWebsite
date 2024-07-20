@@ -1,9 +1,9 @@
 export const eventsData = [
     {
       id: 1,
-      eventImage: '../../assets/LCME-Icon2-2.png',
+      eventImage: 'event1.jpg',
       eventTitle: 'Summer Festival',
-      description: 'Join us for a celebration of summer with music, food, and entertainment for all ages.',
+      description: 'Join us for a celebration of summer with music, food, and entertainment.',
       age: 'No restriction (all)',
       city: 'Ottawa',
       category: 'Annual Events',
