@@ -43,7 +43,7 @@ const Navbar = () => {
         {/*<li><a href="/#/#about">About</a></li> {/** adding extra /# because i am using a hash router now */}
         <li>
              {/*<Link to="/#about">{t("about")}</Link> {/*added # here*/}
-             <a href="/#about">{t("about")}</a>
+             <a href="/#about">About</a>
             </li>
         <li> <Link to="/events">{t("events")}</Link>  </li>
         {/*<li> <a href="/#/#volunteer">{t("volunteer")}</a> </li>*/}
@@ -55,9 +55,10 @@ const Navbar = () => {
           <ul className={`dropdown-menu ${isOpen ? 'show' : ''}`}>
             {dropdownItems.map((item, index) => (
               <li key={index}>
-                <a href={item.link} className="dropdown-item">
-                  {item.text}
-                </a>
+                <Link to={item.link}>{item.text} </Link>
+                {/*<a href={} className="dropdown-item">
+                  {}
+                </a>*/}
               </li>
             ))}
           </ul>
