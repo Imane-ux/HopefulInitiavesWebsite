@@ -9,7 +9,7 @@ const About = () => {
       
     <div id="about" className='about'>
         <div className='about-left'>
-            <img src={image1} alt="" className='image1' />
+            <img src={image1} alt="Image of diverse people" className='image1' />
         </div>
         <div className='about-right'>
             <h3> {t("aboutSection.title")}</h3>

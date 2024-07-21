@@ -43,7 +43,7 @@ const Navbar = () => {
         {/*<li><a href="/#/#about">About</a></li> {/** adding extra /# because i am using a hash router now */}
         <li>
              {/*<Link to="/#about">{t("about")}</Link> {/*added # here*/}
-             <a href="/#about">About</a>
+             <a href="/#about">{t("about")}</a>
             </li>
         <li> <Link to="/events">{t("events")}</Link>  </li>
         {/*<li> <a href="/#/#volunteer">{t("volunteer")}</a> </li>*/}
